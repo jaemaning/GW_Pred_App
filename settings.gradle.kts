@@ -16,8 +16,13 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+        maven {
+            url = uri("https://repository.map.naver.com/archive/maven")
+        }
     }
 }
 
 rootProject.name = "GW_Pred_App"
 include(":app")
+include(":data")
+include(":domain")
