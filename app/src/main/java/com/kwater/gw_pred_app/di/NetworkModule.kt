@@ -1,14 +1,14 @@
-package com.example.gw_pred_app.di
+package com.kwater.gw_pred_app.di
 
 import android.content.Context
 import android.util.Log
 import coil.ImageLoader
 import coil.request.CachePolicy
 import coil.util.DebugLogger
-import com.example.data.remote.api.NaverCloudApi
-import com.example.gw_pred_app.BuildConfig
-import com.example.gw_pred_app.utils.ObjectStorageInterceptor
-import com.example.gw_pred_app.utils.utils.NAVER_CLOUD_URL
+import com.kwater.data.remote.api.NaverCloudApi
+import com.kwater.gw_pred_app.BuildConfig
+import com.kwater.gw_pred_app.utils.ObjectStorageInterceptor
+import com.kwater.gw_pred_app.utils.utils.NAVER_CLOUD_URL
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

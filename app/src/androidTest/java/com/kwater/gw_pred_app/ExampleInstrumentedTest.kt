@@ -1,4 +1,4 @@
-package com.example.gw_pred_app
+package com.kwater.gw_pred_app
 
 import androidx.test.platform.app.InstrumentationRegistry
 import androidx.test.ext.junit.runners.AndroidJUnit4
@@ -14,11 +14,11 @@ import org.junit.Assert.*
  * See [testing documentation](http://d.android.com/tools/testing).
  */
 @RunWith(AndroidJUnit4::class)
-class ExampleInstrumentedTest {
+class kwaterInstrumentedTest {
     @Test
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.example.gw_pred_app", appContext.packageName)
+        assertEquals("com.kwater.gw_pred_app", appContext.packageName)
     }
 }

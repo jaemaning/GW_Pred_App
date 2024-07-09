@@ -1,4 +1,4 @@
-package com.example.gw_pred_app
+package com.kwater.gw_pred_app
 
 import org.junit.Test
 

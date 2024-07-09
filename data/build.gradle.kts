@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.data"
+    namespace = "com.kwater.data"
     compileSdk = 34
 
     defaultConfig {

@@ -1,4 +1,4 @@
-package com.example.data.remote.api
+package com.kwater.data.remote.api
 
 import okhttp3.RequestBody
 import okhttp3.ResponseBody

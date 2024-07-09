@@ -1,4 +1,4 @@
-package com..gw_pred_app.ui
+package com.kwater.gw_pred_app.ui
 
 import android.content.Context
 import android.net.ConnectivityManager
@@ -20,7 +20,7 @@ import androidx.compose.material3.Scaffold
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
-import com.example.gw_pred_app.ui.theme.GW_Pred_AppTheme
+import com.kwater.gw_pred_app.ui.theme.GW_Pred_AppTheme
 import com.naver.maps.map.compose.ExperimentalNaverMapApi
 import com.naver.maps.map.compose.MapProperties
 import com.naver.maps.map.compose.MapUiSettings
@@ -60,10 +60,10 @@ import coil.ImageLoader
 import coil.request.CachePolicy
 import coil.request.ImageRequest
 import coil.request.ImageResult
-import com.example.data.remote.api.NaverCloudApi
-import com.example.gw_pred_app.viewmodel.MainViewModel
-import com.example.gw_pred_app.R
-import com.example.gw_pred_app.utils.splitMarkerName
+import com.kwater.data.remote.api.NaverCloudApi
+import com.kwater.gw_pred_app.viewmodel.MainViewModel
+import com.kwater.gw_pred_app.R
+import com.kwater.gw_pred_app.utils.splitMarkerName
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch

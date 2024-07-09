@@ -1,4 +1,4 @@
-package com.example.gw_pred_app.utils
+package com.kwater.gw_pred_app.utils
 
 import okhttp3.Headers
 import okhttp3.Interceptor

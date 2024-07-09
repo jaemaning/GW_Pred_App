@@ -1,8 +1,8 @@
-package com.example.gw_pred_app.di
+package com.kwater.gw_pred_app.di
 
-import com.example.data.remote.api.NaverCloudApi
-import com.example.data.repository.NaverCloudRepositoryImpl
-import com.example.domain.repository.NaverCloudRepository
+import com.kwater.data.remote.api.NaverCloudApi
+import com.kwater.data.repository.NaverCloudRepositoryImpl
+import com.kwater.domain.repository.NaverCloudRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn

@@ -1,10 +1,10 @@
-package com.example.gw_pred_app.viewmodel
+package com.kwater.gw_pred_app.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.domain.usecase.NaverCloudUsecase
+import com.kwater.domain.usecase.NaverCloudUsecase
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
 import okhttp3.RequestBody

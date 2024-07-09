@@ -8,26 +8,25 @@ plugins {
 }
 
 // 보안키 설정을 위한 properties 세팅
+// 선언 및 key 값 가져오기
 val localProperties = Properties()
 val localPropertiesFile = rootProject.file("local.properties")
 if (localPropertiesFile.exists()) {
     localProperties.load(localPropertiesFile.inputStream())
 }
 
-val naverMapClientId = localProperties.getProperty("naverMapClient_id") ?: ""
-
 android {
-    namespace = "com.example.gw_pred_app"
+    namespace = "com.kwater.gw_pred_app"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.gw_pred_app"
+        applicationId = "com.kwater.gw_pred_app"
         minSdk = 24
         targetSdk = 34
         versionCode = 1
         versionName = "1.0"
 
-        buildConfigField("String", "naverMapClient_id", "\"$naverMapClientId\"")
+        buildConfigField("String", "naverMapClient_id", "\"${localProperties.getProperty("naverMapClient_id")}\"")
         buildConfigField("String", "naverAccess_key", "\"${localProperties.getProperty("naverAccess_key")}\"")
         buildConfigField("String", "naverSecret_key", "\"${localProperties.getProperty("naverSecret_key")}\"")
 
@@ -81,6 +80,7 @@ dependencies {
     implementation(libs.androidx.ui.tooling.preview)
     implementation(libs.androidx.material3)
     implementation(libs.androidx.runtime.livedata)
+    implementation(libs.androidx.webkit)
     testImplementation(libs.junit)
     androidTestImplementation(libs.androidx.junit)
     androidTestImplementation(libs.androidx.espresso.core)

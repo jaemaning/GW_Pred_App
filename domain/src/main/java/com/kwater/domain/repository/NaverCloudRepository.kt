@@ -1,4 +1,4 @@
-package com.example.domain.repository
+package com.kwater.domain.repository
 
 import okhttp3.RequestBody
 import okhttp3.ResponseBody

@@ -6,7 +6,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.domain"
+    namespace = "com.kwater.domain"
     compileSdk = 34
 
     defaultConfig {

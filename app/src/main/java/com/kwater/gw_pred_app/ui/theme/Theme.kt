@@ -1,4 +1,4 @@
-package com.example.gw_pred_app.ui.theme
+package com.kwater.gw_pred_app.ui.theme
 
 import android.app.Activity
 import android.os.Build

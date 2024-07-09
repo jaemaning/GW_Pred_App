@@ -1,6 +1,6 @@
-package com.example.domain.usecase
+package com.kwater.domain.usecase
 
-import com.example.domain.repository.NaverCloudRepository
+import com.kwater.domain.repository.NaverCloudRepository
 import okhttp3.RequestBody
 import okhttp3.ResponseBody
 import retrofit2.Response

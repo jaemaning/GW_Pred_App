@@ -1,7 +1,7 @@
-package com.example.data.repository
+package com.kwater.data.repository
 
-import com.example.data.remote.api.NaverCloudApi
-import com.example.domain.repository.NaverCloudRepository
+import com.kwater.data.remote.api.NaverCloudApi
+import com.kwater.domain.repository.NaverCloudRepository
 import okhttp3.RequestBody
 import okhttp3.ResponseBody
 import retrofit2.Response

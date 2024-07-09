@@ -1,4 +1,4 @@
-package com.example.gw_pred_app.utils
+package com.kwater.gw_pred_app.utils
 
 object utils {
     const val BASE_URL = ""

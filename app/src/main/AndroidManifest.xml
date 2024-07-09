@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.kwater.gw_pred_app"
     xmlns:tools="http://schemas.android.com/tools">
 
     <!-- 인터넷 permission 추가 -->
@@ -7,7 +8,7 @@
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
 
     <application
-        android:name=".di.App"
+        android:name="com.kwater.gw_pred_app.di.App"
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:fullBackupContent="@xml/backup_rules"

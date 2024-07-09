@@ -1,4 +1,4 @@
-package com.example.data.repository
+package com.kwater.data.repository
 
 import android.content.Context
 import android.content.SharedPreferences
