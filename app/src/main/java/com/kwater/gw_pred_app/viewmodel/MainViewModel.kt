@@ -43,4 +43,25 @@ class MainViewModel @Inject constructor(
         }
     }
 
+    // HTML 데이터를 LiveData로 관리
+    private val _htmlData = MutableLiveData<String>()
+    val htmlData: LiveData<String> get() = _htmlData
+
+    fun loadHtmlData(bucketName: String, objectKey: String, fallbackKey: String? = null) {
+        viewModelScope.launch {
+            val response = naverCloudUseCase.getObject(bucketName, objectKey)
+            if (response.isSuccessful && response.body() != null) {
+                _htmlData.postValue(response.body()?.string())
+            } else if (fallbackKey != null) {
+                val fallbackResponse = naverCloudUseCase.getObject(bucketName, fallbackKey)
+                if (fallbackResponse.isSuccessful && fallbackResponse.body() != null) {
+                    _htmlData.postValue(fallbackResponse.body()?.string())
+                } else {
+                    _htmlData.postValue("Error loading HTML data.")
+                }
+            } else {
+                _htmlData.postValue("Error loading HTML data.")
+            }
+        }
+    }
 }

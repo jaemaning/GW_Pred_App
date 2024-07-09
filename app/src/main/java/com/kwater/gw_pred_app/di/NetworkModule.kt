@@ -89,4 +89,25 @@ class NetworkModule {
 
         return imageLoader
     }
+
+    // HTML 인터셉터
+    @Provides
+    @Singleton
+    fun provideHtmlClient(objectStorageInterceptor: ObjectStorageInterceptor): OkHttpClient {
+        return OkHttpClient.Builder()
+            .addInterceptor(objectStorageInterceptor)
+            .build()
+    }
+
+    @Provides
+    @Singleton
+    @Named("htmlRetrofit")
+    fun provideHtmlRetrofit(client: OkHttpClient): Retrofit {
+        return Retrofit.Builder()
+            .baseUrl(NAVER_CLOUD_URL)
+            .client(client)
+            .addConverterFactory(ScalarsConverterFactory.create()) // HTML 데이터를 문자열로 변환
+            .build()
+    }
+
 }
