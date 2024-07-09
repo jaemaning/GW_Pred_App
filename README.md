@@ -1,7 +1,14 @@
 # GW_Pred_App
 
+# 지하수 수위예보 in Jeju
+
+![graphic Image](./images/graphic_image.png)
+
+- 일단위 지하수 수위예보를 받아 볼 수 있습니다. (현재 제주지역만 서비스런칭)
+- 과거 자료와 비교를 통해 예보 정확도를 눈으로 확인할 수 있습니다.
 
 ## 개발일지
+![jeju Image](./images/Jeju_Island.jpg)
 
 ### 2024-06-19
 - 개발 환경 구축 및 테스트 코드 작성
